@@ -35,7 +35,7 @@ contract RockyToken is ERC20Burnable, Ownable {
      */
     function mint(address recipient, uint256 amount) external onlyOwner {
         require(amount != 0, "amount == 0");
-        require(amount.add(totalSupply()) < maxSupply, "maxSupply exceeded");
+        require(amount.add(totalSupply()) <= maxSupply, "maxSupply exceeded");
         _mint(recipient, amount);
     }
 
