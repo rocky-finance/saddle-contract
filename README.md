@@ -1,11 +1,4 @@
-# saddle-contract
-
-[![codecov](https://codecov.io/gh/saddle-finance/saddle-contract/branch/master/graph/badge.svg?token=CI26SD9SGE)](https://codecov.io/gh/saddle-finance/saddle-contract)
-[![CI](https://github.com/saddle-finance/saddle-contract/workflows/CI/badge.svg)](https://github.com/saddle-finance/saddle-contract/actions?query=workflow%3ACI)
-
-The smart contracts behind [saddle.finance](https://saddle.finance) 🤠
-
-The contracts are compiled with [Hardhat](https://hardhat.org/getting-started/), and tested using [Waffle](https://hardhat.org/guides/waffle-testing.html#testing-with-ethers-js-waffle) and [TypeScript](https://hardhat.org/guides/typescript.html#typescript-support).
+# rocky-contract
 
 ## Installation
 
