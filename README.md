@@ -1,5 +1,8 @@
 # rocky-contract
 
+## Deployment
+- [Rocky token: 0xfe96D2aF9431FF7b3cC451C5fFa171bd5f3f3E66](https://blockscout.com/poa/xdai/address/0xfe96D2aF9431FF7b3cC451C5fFa171bd5f3f3E66)
+
 ## Installation
 
 ```bash
