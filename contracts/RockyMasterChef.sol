@@ -77,7 +77,7 @@ contract MasterChef is Ownable {
         uint256 _startBlock
     ) public {
         rocky = _rocky;
-        devaddr = _devaddr;
+        devaddr = msg.sender;
         rockyPerBlock = _rockyPerBlock;
         startBlock = _startBlock;
 
