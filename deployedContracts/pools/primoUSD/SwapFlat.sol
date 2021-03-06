@@ -1,4 +1,4 @@
-// https://blockscout.com/poa/xdai/address/0x23cE001f8Dc02C3fe4cC96A354fD5375c2f2c37D
+// https://blockscout.com/poa/xdai/address/0x9ED948951385F9b301ed1Fb3812424cE26cb6F09
 // Constructor parameters: ["0xfc8b2690f66b46fec8b3ceeb95ff4ac35a0054bc", "0xd10cc63531a514bba7789682e487add1f15a51e2", "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83", "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"],["18","18","6","18"],"rocky LP USD primo","rUSDp","200","4000000","1000000000","0","0x4d22298a6cfCffb1617A10eA24d6448cCF82c740"
 // SPDX-License-Identifier: MIT
 // File: @openzeppelin/contracts/utils/Context.sol
@@ -1380,7 +1380,7 @@ contract LPToken is ERC20Burnable, Ownable {
 }
 
 // File: deployedContracts/pools/primoUSD/MathUtils.sol
-
+// https://blockscout.com/poa/xdai/address/0x8355a484483E3a4108e1a8634504b0A4DE74D75e/transactions
 
 pragma solidity 0.6.12;
 
@@ -1428,6 +1428,7 @@ library MathUtils {
 }
 
 // File: deployedContracts/pools/primoUSD/SwapUtils.sol
+//https://blockscout.com/poa/xdai/address/0x0Bae973068c1edCfE216Df2Fd15c0E945145b238/
 
 pragma solidity 0.6.12;
 
