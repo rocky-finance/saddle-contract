@@ -186,6 +186,7 @@ contract RockyMasterChef is Ownable {
         }
         uint256 multiplier = getMultiplier(pool.lastRewardBlock, block.number);
         uint256 rockyReward = multiplier.mul(rockyPerBlock).mul(pool.allocPoint).div(totalAllocPoint);
+        rocky.mint(address(this), rockyReward);
         rocky.mint(devaddr, rockyReward.mul(devReward).div(1000));
         pool.accPerShare = pool.accPerShare.add(rockyReward.mul(1e12).div(lpSupply));
         pool.lastRewardBlock = block.number;
