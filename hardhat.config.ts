@@ -22,6 +22,11 @@ let config: HardhatUserConfig = {
       url: process.env.ALCHEMY_API,
       gasPrice: 55 * 1000000000,
     },
+    ropsten: {
+      url: process.env.ALCHEMY_API,
+      gasPrice: 2 * 1000000000,
+      accounts: [`${process.env.ROPSTEN_PRIVATE_KEY}`]
+    },
   },
   paths: {
     artifacts: "./build/artifacts",
