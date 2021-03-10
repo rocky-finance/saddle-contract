@@ -1,8 +1,8 @@
 import { BigNumber } from "@ethersproject/bignumber"
 import { RockyMasterChef } from "../../build/typechain/RockyMasterChef"
 import RockyMasterChefArtifact from "../../build/artifacts/contracts/RockyMasterChef.sol/RockyMasterChef.json"
-import { RockyToken } from "../../build/typechain/RockyMasterChef"
-import RockyTokenArtifact from "../../build/artifacts/contracts/RockyMasterChef.sol/RockyMasterChef.json"
+import { RockyToken } from "../../build/typechain/RockyToken"
+import RockyTokenArtifact from "../../build/artifacts/contracts/RockyToken.sol/RockyToken.json"
 
 import { deployContract } from "ethereum-waffle"
 import { deployContractWithLibraries } from "../../test/testUtils"
@@ -42,9 +42,9 @@ async function deploySwap(): Promise<void> {
   const masterChef = (await deployContract(
     deployer,
     RockyMasterChefArtifact,
-    rockyToken.address,
-    deployer,
-
+    [rockyToken.address,
+    _rockyPerBlock,
+    _startBlock]
   )) as RockyMasterChef
   await masterChef.deployed()
   console.log(`Rocky masterchef address: ${masterChef.address}`)
