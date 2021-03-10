@@ -18,10 +18,10 @@ const _startBlock = 9799045; // https://ropsten.etherscan.io/block/countdown/979
 
 
 // To run this script and deploy the contracts on the mainnet:
-//    npx hardhat run deployment/onchain/swap-mainnet.ts --network mainnet
+//   npx hardhat run deployment/onchain/rocky-ropsten.ts --network ropsten
 //
 // To verify the source code on etherscan:
-//    npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS [arg0, arg1, ...]
+//    npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS [arg0, arg1, ...]
 //    or
 //    npx hardhat sourcify --network xdai
 
