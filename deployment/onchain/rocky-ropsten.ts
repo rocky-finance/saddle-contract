@@ -25,7 +25,7 @@ const _startBlock = 9799045; // https://ropsten.etherscan.io/block/countdown/979
 //    or
 //    npx hardhat sourcify --network xdai
 
-async function deploySwap(): Promise<void> {
+async function deployRocky(): Promise<void> {
   
   const [deployer]: SignerWithAddress[] = await ethers.getSigners()
   console.log(`Deploying with ${deployer.address}`)
@@ -51,6 +51,6 @@ async function deploySwap(): Promise<void> {
 
 }
 
-deploySwap().then(() => {
+deployRocky().then(() => {
   console.log("Successfully deployed contracts to on-chain network...")
 })
