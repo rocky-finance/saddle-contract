@@ -72,7 +72,6 @@ contract MasterChef is Ownable {
 
     constructor(
         RockyToken _rocky,
-        address _devaddr,
         uint256 _rockyPerBlock,
         uint256 _startBlock
     ) public {
