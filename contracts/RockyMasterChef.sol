@@ -10,14 +10,14 @@ import "./StakeableTokenWrapper.sol";
 import "./RockyToken.sol";
 
 
-// MasterChef is the master of Cake. He can make Cake and he is a fair guy.
+// RockyMasterChef is the master of Cake. He can make Cake and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership
 // will be transferred to a governance smart contract once CAKE is sufficiently
 // distributed and the community can show to govern itself.
 //
 // Have fun reading it. Hopefully it's bug-free. God bless.
-contract MasterChef is Ownable {
+contract RockyMasterChef is Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
